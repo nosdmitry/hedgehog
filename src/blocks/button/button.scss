@@ -1,0 +1,23 @@
+.button {
+  width: 328px;
+  height: 69px;
+  border-radius: 40px;
+  background-color: #70908B;
+  border: none;
+  box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
+  font-family: 'Realway', 'Times New Roman', Times, serif;
+
+  &_place_header {
+    margin: 0 auto;
+    margin-top: 34px;
+    color: #fff;
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    &_place_header  {
+      width: 100%;
+    }
+  }
+}
