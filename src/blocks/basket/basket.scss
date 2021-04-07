@@ -1,0 +1,31 @@
+.basket {
+  position: relative;
+  margin: 0 auto;
+  width: 32px;
+  height: 36px;
+  flex: 1 0 auto;
+  background-color: transparent;
+  border: none;
+  background-image: url(../../images/basket.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__number {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #FFEDCD;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .basket {
+    background-image: url(../../images/basket-small.svg);
+  }
+}
