@@ -1,7 +1,6 @@
 .logo {
   margin: 0;
   padding: 0;  
-  border: 1px solid red;
   background-image: url(../../images/logo.svg);
 
   &_place_header {
@@ -11,8 +10,16 @@
   }
 }
 
-@media (max-width: 768px) {
-  .logo_place_header {
-    
+@media (max-width: 480px) {
+
+  .logo {
+    background-size: cover;
+    &_place_header {
+      text-align: right;
+      max-width: 56px;
+      max-height: 26px;
+    }
   }
+
+  
 }

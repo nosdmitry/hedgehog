@@ -1,13 +1,11 @@
 .header {
-  border: 1px solid red;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 30px 30px 0 30px;
+  padding: 30px 60px 0 60px;
   background-color: #EAEEEF;
 
   &__top {
-    border: 1px solid blue;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -17,7 +15,6 @@
     min-width: 120px;
     margin-right: 20px;
     width: 100%;
-    border: 1px solid green;
     flex-shrink: 1.2;
   }
 
@@ -26,19 +23,26 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .header {
+    padding: 30px 40px 0 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .header {
-    padding: 10px 10px 0 10px;
+    padding: 20px 20px 0 20px;
     
     &__top {
       display: grid;
       grid-template-columns: 25px auto 35px 30px;
       column-gap: 13px;
-      border: 1px solid blue;
       
     }
 
     &__logo-wrap {
+      display: flex;
+      justify-content: flex-end;
       max-width: 120px;
       margin: 0 auto;
     }
@@ -46,9 +50,10 @@
     &__mobile-menu-button {
       display: block;
       background-color: none;
-      border: 1px solid red;
       width: 25px;
       height: 25px;
+      background-image: url(../../images/menu-button.svg);
+      background-color: none;
     }
   }
 }
