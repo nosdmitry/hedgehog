@@ -2,11 +2,15 @@ $ruleway: 'Ruleway', 'Times New Roman', Times, serif;
 $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
 
 .header {
+  z-index: 100;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   padding: 30px 60px 0 60px;
   background-color: #EAEEEF;
+  position: relative;
+  background: radial-gradient(at left top, rgba(180, 197, 194, 0.83) 0%, rgba(224, 225, 225, 0) 100%),
+  radial-gradient(at bottom right, rgba(255, 238, 206, 0.49) 0%, rgba(196, 196, 196, 0) 100%);
 
   &__top {
     box-sizing: border-box;
