@@ -2,18 +2,17 @@ $ruleway: 'Ruleway', 'Times New Roman', Times, serif;
 $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
 
 .cards {
-  max-width: 1184px;
+  max-width: 1284px;
   margin: 100px auto 0 auto;
   box-sizing: border-box;
-  border: 1px solid red;
   position: relative;
-  overflow: hidden;
 
   &__list {
     margin: 0 auto;
     padding: 0;
     list-style: none;
-    display: flex;
+    display: grid;
+    grid-template-columns: 64px 1fr 1fr 64px;
     justify-content: space-between;
     box-sizing: border-box;
   }
@@ -25,10 +24,14 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
     box-sizing: border-box;
     max-width: 570px;
     border-radius: 20px;
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: 40% 60%;
     align-items: flex-end;
-    //clip-path: polygon(0 0, 100% 0, 100% 84%, 89% 100%, 0 100%);
+    margin-right: 43px;
+    
+    &:last-of-type {
+      margin-right: 0;
+    }
 
     &_color_pink {
       background-color: #FFEDCD;
@@ -93,7 +96,11 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
     padding: 0;
     width: 100%;
     max-width: 300px;
+    border: 1px solid red;
     box-sizing: border-box;
+    align-self: center;
+    object-fit: cover;
+    object-position: center;
   }
 
   &__discount {
@@ -133,8 +140,8 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
     background-color: #fff;
     border: none;
     position: absolute;
-    bottom: -3px;
-    right: -3px;
+    bottom: -1px;
+    right: -1px;
     clip-path: polygon(100% 0, 0 100%, 100% 100%);
     background-image: url(../../images/plus.svg);
     background-repeat: no-repeat;
@@ -143,24 +150,19 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
   }
 
   &__arrow {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    background-color: black;
     width: 24px;
-    height: 24px;
-    top: 45%;
-    position: absolute;
+    align-items: center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 
     &_type_left {
-      left: -50px;
       background-image: url(../../images/arrow-left.svg);
     }
 
     &_type_right {
-      right: -50px;
       background-image: url(../../images/arrow-right.svg);
     }
   }

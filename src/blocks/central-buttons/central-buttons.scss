@@ -15,7 +15,7 @@ $ruleway: 'Ruleway', 'Times New Roman', Times, serif;
     background-repeat: no-repeat;
     position: absolute;
     //transform: translateX(-500px);
-    transition: transform 1.5s ease-in-out;
+    transition: transform .5s ease-in-out;
 
     &_place_left {
       top: -225px;
@@ -169,6 +169,7 @@ $ruleway: 'Ruleway', 'Times New Roman', Times, serif;
     }
 
     &__circle {
+      background-size: 50%;
       width: 92px;
       height: 92px;
     }
