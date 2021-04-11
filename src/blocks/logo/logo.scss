@@ -1,13 +1,20 @@
 .logo {
   margin: 0;
   padding: 0;  
-  background-image: url(../../images/logo.svg);
+  width: 120px;
+  height: 56px;
 
-  &_place_header {
-    width: 120px;
-    height: 56px;
-    display: block;
+  &_place {
+    &_header {
+      background-image: url(../../images/logo.svg);
+      display: block;
+    } 
+    &_footer {
+      background-image: url(../../images/logo2.svg);
+      display: block;
+    }
   }
+  
 }
 
 @media (max-width: 480px) {
