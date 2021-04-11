@@ -3,7 +3,7 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
 
 .cards {
   max-width: 1284px;
-  margin: 100px auto 0 auto;
+  margin: 100px auto 91px auto;
   box-sizing: border-box;
   position: relative;
 
@@ -166,5 +166,23 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
       background-image: url(../../images/arrow-right.svg);
     }
   }
+
+}
+
+@media (max-width: 1024px) {
+  .cards {
+    overflow-x: hidden;
+    &__list {
+      width: 100%;
+      border: 1px solid red;
+      grid-template-columns: repeat(2, minmax(250px, 80%));
+    }
+
+    &__arrow {
+      display: none;
+    }
+  }
+
+
 
 }

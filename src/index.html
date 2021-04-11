@@ -87,7 +87,7 @@
 
       <ul class="cards__list">
 
-        <a href="#" class="cards__arrow cards__arrow_type_left" aria-label="Влево"></a>
+        <a href="#" class="cards__arrow_type_left cards__arrow " aria-label="Влево"></a>
 
         <li class="cards__list-item cards__list-item_color_pink">
           <article class="cards__article">
@@ -136,6 +136,65 @@
 
       </ul>
 
+    </section>
+
+    <section class="form">
+
+      <h2 class="form__title">Заполните заявку и мы забронируем для Вас нового друга</h2>
+
+      <form class="form__container">
+
+        <div class="form__container-buttons">
+          <div class="form__container-button-wrap">
+            <input type="radio" name="buttons" class="form__radio-button" id="fb1">
+            <label class="form__radio-button-label" for="fb1">хочу ёжика для себя</label>
+          </div>
+          <div class="form__container-button-wrap">
+            <input type="radio" name="buttons" class="form__radio-button" id="fb2">
+            <label class="form__radio-button-label" for="fb2">хочу ёжика для детей</label>
+          </div>
+          <div class="form__container-button-wrap form__container-button-wrap_type_long">
+            <input type="radio" name="buttons" class="form__radio-button" id="fb3">
+            <label class="form__radio-button-label" for="fb3">хочу ёжика для разведения</label>
+          </div>
+        </div>
+        
+        <div class="form__container-radio">
+          <div class="form__radio-container">    
+            <div class="form__radio-wrap">
+              <input class="form__radio" type="radio" id="sb1" name="radio">
+              <label class="form__radio-label" for="sb1">Мне нужен 1-2 ёжика</label>
+            </div>
+            <div class="form__radio-wrap">
+              <input class="form__radio" type="radio" id="sb2" name="radio">
+              <label class="form__radio-label" for="sb2">Мне нужны 3-4 ёжика</label>
+            </div>
+          </div>
+          <div class="form__radio-container">
+            <div class="form__radio-wrap">
+              <input class="form__radio" type="radio" id="sb3" name="radio">
+              <label class="form__radio-label" for="sb3">Мне нужны 3 и более ёжиков</label>
+            </div>
+            <div class="form__radio-wrap">
+              <input class="form__radio" type="radio" id="sb4" name="radio">
+              <label class="form__radio-label" for="sb4">Мне нужны 3 и более ёжиков</label>
+            </div>
+          </div> 
+        </div>
+        
+        
+                 
+  
+        <div class="form__container-inputs">
+          <input type="text" class="form__input form__input_type_name" placeholder="Ваше имя">
+          <input type="text" class="form__input form__input_type_tel" placeholder="Ваш телефон">
+          <input type="text" class="form__input form__input_type_email" placeholder="Ваш e-mail">
+          <input type="textarea" class="form__input form__input_type_big" placeholder="Комментарий к заявке">
+        </div>        
+
+        <button type="button" class="form__submit">Купить ёжика</button>
+
+      </form>
     </section>
 
   </main>
