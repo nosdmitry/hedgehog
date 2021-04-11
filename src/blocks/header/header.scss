@@ -99,8 +99,9 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
       background-color: none;
       width: 25px;
       height: 25px;
-      background-image: url(../../images/menu-button.svg);
-      background-color: none;
+      background: url(../../images/menu-button.svg) no-repeat center;
+      background-size: contain;
+      border: none;
     }
 
     &__header {

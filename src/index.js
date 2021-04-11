@@ -26,3 +26,23 @@ console.log('Hello!');
 //   });
   
 // });
+
+const menuContainer = document.querySelector('.menu_place_header');
+const menuOpenButton = document.querySelector('.header__mobile-menu-button');
+const menuCloseButton = document.querySelector('.menu__close-button');
+
+function openMenu() {
+  console.log('click');
+  menuContainer.classList.add('menu_place_header_opened');
+}
+
+function closeMenu() {
+  menuContainer.classList.remove('menu_place_header_opened');
+}
+
+menuOpenButton.addEventListener('click', () => {
+  openMenu();
+});
+menuCloseButton.addEventListener('click', () => {
+  closeMenu();
+});
