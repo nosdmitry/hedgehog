@@ -8,10 +8,43 @@ console.log('Hello!');
 
 $('.cards__list').slick({
   infinite: true,
-  speed: 300,
-  slidesToShow: 1,
+  speed: 100,
+  slidesToShow: 2,
   prevArrow: '<div class="cards__arrow cards__arrow_type_left" aria-label="Влево"></div>',
   nextArrow: '<div class="cards__arrow cards__arrow_type_right" aria-label="Вправо"></div>',
+  responsive: [
+    {
+      breakpoint: 1400,
+      settings: {
+        arrows: false,
+        infinite: true,
+        speed: 100,
+        slidesToShow: 2,
+
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        infinite: true,
+        speed: 200,
+        slidesToShow: 2,
+        centerMode: true,
+        variableWidth: true
+      }
+    }, {
+      breakpoint: 320,
+      settings: {
+        arrows: false,
+        infinite: true,
+        speed: 200,
+        slidesToShow: 2,
+        variableWidth: true,
+        mobilefirst: true
+      }
+    }
+  ]
+
 });
 
 // $(document).ready(function(){
@@ -32,7 +65,7 @@ $('.cards__list').slick({
 //     slidesToShow: 2,
 //     slidesToScroll: 2
 //   });
-  
+
 // });
 
 const menuContainer = document.querySelector('.menu_place_header');
@@ -43,7 +76,7 @@ const submenuContainer = document.querySelector('.menu__catalog');
 
 function toggleCatalogSubmenu() {
   submenuContainer.classList.toggle('menu_place_header_opened');
-  if(submenuContainer.classList.contains('menu_place_header_opened')) {
+  if (submenuContainer.classList.contains('menu_place_header_opened')) {
     catalogButton.classList.add('menu__list-item_type_catalog-active');
   } else {
     catalogButton.classList.remove('menu__list-item_type_catalog-active');

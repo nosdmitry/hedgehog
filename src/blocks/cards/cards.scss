@@ -19,6 +19,7 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
 
   &__list-item {
     position: relative;
+    height: 100%;
     z-index: 110;
     padding: 54px 0 54px 62px;
     box-sizing: border-box;
@@ -28,6 +29,12 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
     grid-template-columns: 40% 60%;
     align-items: flex-end;
     margin-right: 43px;
+    &-wrap {
+      box-sizing: border-box;
+      padding-top: 10px;
+      padding-right: 43px;
+      height: 400px;
+    }
     
     &:last-of-type {
       margin-right: 0;
@@ -95,8 +102,10 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     width: 100%;
-    max-width: 300px;
-    border: 1px solid red;
+    position: absolute;
+    max-width: 362px;
+    right: -16px;
+    bottom: 28px;
     box-sizing: border-box;
     align-self: center;
     object-fit: cover;
@@ -180,22 +189,53 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
     overflow-x: hidden;
     &__list {
       width: 100%;
-      border: 1px solid red;
       grid-template-columns: repeat(2, minmax(250px, 80%));
     }
 
-    &__arrow {
-      display: none;
+    &__list-item {
+      &-wrap {
+        height: 450px;
+      }
     }
+
+    &__image {
+      right: -80px;
+      width: 300px;
+    }
+
+
   }
 
 }
 
+@media (max-width: 768px) {
+  .cards {
+    &__list-item {
+      &-wrap {
+        margin-right: 150px;
+      }
+    }
+
+  }
+}
+
+// @media (max-width: 320px) {
+//   .cards {
+//     &__list-item {
+//       padding:
+//       &-wrap {
+//         max-width: 243px;
+//         margin-right: 10px;
+//         border: 1px solid red;
+//       }
+//     }
+//   }
+// }
+
 .cards__arrow {
   width: 24px;
   height: 24px;
-  background-color: none;
-  border: 1px solid red;
+  
 
   // &_type_left {
   //   left: -50px;
@@ -205,10 +245,4 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
   //   right: -50px;
   //   background-image: url(../../images/arrow-right.svg);
   // }
-}
-
-.galery-test {
-  border: 1px solid red;
-  width: 50%;
-  margin: 0 auto;
 }
