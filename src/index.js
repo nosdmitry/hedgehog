@@ -30,6 +30,17 @@ console.log('Hello!');
 const menuContainer = document.querySelector('.menu_place_header');
 const menuOpenButton = document.querySelector('.header__mobile-menu-button');
 const menuCloseButton = document.querySelector('.menu__close-button');
+const catalogButton = document.querySelector('.menu__list-item_type_catalog');
+const submenuContainer = document.querySelector('.menu__catalog');
+
+function toggleCatalogSubmenu() {
+  submenuContainer.classList.toggle('menu_place_header_opened');
+  if(submenuContainer.classList.contains('menu_place_header_opened')) {
+    catalogButton.classList.add('menu__list-item_type_catalog-active');
+  } else {
+    catalogButton.classList.remove('menu__list-item_type_catalog-active');
+  }
+}
 
 function openMenu() {
   console.log('click');
@@ -38,6 +49,8 @@ function openMenu() {
 
 function closeMenu() {
   menuContainer.classList.remove('menu_place_header_opened');
+  submenuContainer.classList.remove('menu_place_header_opened');
+  catalogButton.classList.remove('menu__list-item_type_catalog-active');
 }
 
 menuOpenButton.addEventListener('click', () => {
@@ -45,4 +58,7 @@ menuOpenButton.addEventListener('click', () => {
 });
 menuCloseButton.addEventListener('click', () => {
   closeMenu();
+});
+catalogButton.addEventListener('click', () => {
+  toggleCatalogSubmenu();
 });
