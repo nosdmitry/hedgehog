@@ -159,11 +159,17 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
     background-size: contain;
 
     &_type_left {
+      position: absolute;
       background-image: url(../../images/arrow-left.svg);
+      left: -50px;
+      top: 50%;
     }
 
     &_type_right {
+      position: absolute;
       background-image: url(../../images/arrow-right.svg);
+      right: -50px;
+      top: 50%;
     }
   }
 
@@ -183,6 +189,26 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
     }
   }
 
+}
 
+.cards__arrow {
+  width: 24px;
+  height: 24px;
+  background-color: none;
+  border: 1px solid red;
 
+  // &_type_left {
+  //   left: -50px;
+  //   background-image: url(../../images/arrow-left.svg);
+  // }
+  // &_type_right {
+  //   right: -50px;
+  //   background-image: url(../../images/arrow-right.svg);
+  // }
+}
+
+.galery-test {
+  border: 1px solid red;
+  width: 50%;
+  margin: 0 auto;
 }

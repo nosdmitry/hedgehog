@@ -6,6 +6,14 @@ global.jQuery = $;
 global.$ = $;
 console.log('Hello!');
 
+$('.cards__list').slick({
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  prevArrow: '<div class="cards__arrow cards__arrow_type_left" aria-label="Влево"></div>',
+  nextArrow: '<div class="cards__arrow cards__arrow_type_right" aria-label="Вправо"></div>',
+});
+
 // $(document).ready(function(){
 //   // $('.slick-carousel').slick({
 //   //   dots: false,

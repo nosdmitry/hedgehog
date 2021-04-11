@@ -21,19 +21,27 @@
       <ul class="menu menu_place_header">
         <button class="menu__close-button menu__close-button_type_popup"></button>
         <a class="logo logo_place_header menu__logo_type_popup" href="#"></a>
-        
-        <li class="menu__list-item menu__list-item_type_popup menu__list-item_type_catalog"><a class="menu__link menu__link_color_dark" href="#">Каталог</a>
+
+        <li class="menu__list-item menu__list-item_type_popup menu__list-item_type_catalog"><a
+            class="menu__link menu__link_color_dark" href="#">Каталог</a>
           <ul class="menu__catalog">
-            <li class="menu__list-item menu__list-item_type_popup menu__list-item_type_submenu"><a class="menu__link menu__link_color_dark" href="#">Ёжики</a></li>
-            <li class="menu__list-item menu__list-item_type_popup menu__list-item_type_submenu"><a class="menu__link menu__link_color_dark" href="#">Питание</a></li>
-            <li class="menu__list-item menu__list-item_type_popup menu__list-item_type_submenu"><a class="menu__link menu__link_color_dark" href="#">Переноски</a></li>
-            <li class="menu__list-item menu__list-item_type_popup menu__list-item_type_submenu"><a class="menu__link menu__link_color_dark" href="#">Лекарства</a></li>
+            <li class="menu__list-item menu__list-item_type_popup menu__list-item_type_submenu"><a
+                class="menu__link menu__link_color_dark" href="#">Ёжики</a></li>
+            <li class="menu__list-item menu__list-item_type_popup menu__list-item_type_submenu"><a
+                class="menu__link menu__link_color_dark" href="#">Питание</a></li>
+            <li class="menu__list-item menu__list-item_type_popup menu__list-item_type_submenu"><a
+                class="menu__link menu__link_color_dark" href="#">Переноски</a></li>
+            <li class="menu__list-item menu__list-item_type_popup menu__list-item_type_submenu"><a
+                class="menu__link menu__link_color_dark" href="#">Лекарства</a></li>
           </ul>
         </li>
-        <li class="menu__list-item menu__list-item_type_popup"><a class="menu__link menu__link_color_dark" href="#">О нас</a></li>
-        <li class="menu__list-item menu__list-item_type_popup"><a class="menu__link menu__link_color_dark" href="#">Контакты</a></li>
-        <li class="menu__list-item menu__list-item_type_popup"><a class="menu__link menu__link_color_dark" href="#">Галерея</a></li>
-        
+        <li class="menu__list-item menu__list-item_type_popup"><a class="menu__link menu__link_color_dark" href="#">О
+            нас</a></li>
+        <li class="menu__list-item menu__list-item_type_popup"><a class="menu__link menu__link_color_dark"
+            href="#">Контакты</a></li>
+        <li class="menu__list-item menu__list-item_type_popup"><a class="menu__link menu__link_color_dark"
+            href="#">Галерея</a></li>
+
         <a class="phone__number menu__phone-number_type_popup" href="tel:+79655698998">+7 (965) 569-89-98</a>
       </ul>
 
@@ -67,10 +75,10 @@
     <section class="central-buttons">
 
       <div class="central-buttons__image central-buttons__image_place_left"></div>
-      
+
 
       <ul class="central-buttons__list">
-        
+
         <li class="central-buttons__list-item central-buttons__list-item_type_breeding">
           <button class="central-buttons__circle central-buttons__circle_type_breeding"
             aria-label="Разведение ёжиков"></button>
@@ -97,9 +105,9 @@
 
     <section class="cards">
 
-      <ul class="cards__list">
+      <!-- <button href="#" class="cards__arrow cards__arrow_type_left slick-prev" aria-label="Влево"></button> -->
 
-        <a href="#" class="cards__arrow_type_left cards__arrow " aria-label="Влево"></a>
+      <ul class="cards__list">
 
         <li class="cards__list-item cards__list-item_color_pink">
           <article class="cards__article">
@@ -144,10 +152,21 @@
           <div class="cards__add"></div>
         </li>
 
-        <a href="#" class="cards__arrow cards__arrow_type_right" aria-label="Вправо"></a>
-
       </ul>
 
+      <button href="#" class="cards__arrow cards__arrow_type_right slick-next" aria-label="Вправо"></button>
+
+      <!-- <section class="galery-test">
+        <button class="slick-prev">prev</button>
+        <div class="slider test">
+          <div>111111111</div>
+          <div>22222222</div>
+          <div>33333333</div>
+          <div>444444444</div>
+        </div>
+  
+      </section> -->
+      
     </section>
 
     <section class="form">
@@ -170,9 +189,9 @@
             <label class="form__radio-button-label" for="fb3">хочу ёжика для разведения</label>
           </div>
         </div>
-        
+
         <div class="form__container-radio">
-          <div class="form__radio-container">    
+          <div class="form__radio-container">
             <div class="form__radio-wrap">
               <input class="form__radio" type="radio" id="sb1" name="radio">
               <label class="form__radio-label" for="sb1">Мне нужен 1-2 ёжика</label>
@@ -191,15 +210,15 @@
               <input class="form__radio" type="radio" id="sb4" name="radio">
               <label class="form__radio-label" for="sb4">Мне нужны 3 и более ёжиков</label>
             </div>
-          </div> 
+          </div>
         </div>
-  
+
         <div class="form__container-inputs">
           <input type="text" class="form__input form__input_type_name" placeholder="Ваше имя">
           <input type="text" class="form__input form__input_type_tel" placeholder="Ваш телефон">
           <input type="text" class="form__input form__input_type_email" placeholder="Ваш e-mail">
           <input type="textarea" class="form__input form__input_type_big" placeholder="Комментарий к заявке">
-        </div>        
+        </div>
 
         <button type="button" class="form__submit">Купить ёжика</button>
 
