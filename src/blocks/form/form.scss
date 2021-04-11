@@ -228,6 +228,7 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
 
 @media (max-width: 480px) {
   .form {
+    border-radius: 0;
     &__container-radio {
       display: flex;
       flex-wrap: wrap;

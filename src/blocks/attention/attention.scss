@@ -1,0 +1,66 @@
+$ruleway: 'Ruleway', 'Times New Roman', Times, serif;
+$cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
+
+.attention {
+  margin: 0 auto;
+  margin-top: 102px;
+  max-width: 363px;
+
+  &__title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-family: $cormorant;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #195557;
+
+    &_type_amount {
+      margin: 0;
+      padding: 0;
+      text-decoration: underline;
+    }
+  }
+
+   
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: $ruleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #195557;
+  }
+}
+
+@media (max-width: 480px) {
+  .attention {
+    margin-top: 50px;
+    margin-left: 21px;
+    max-width: 220px;
+    &__title-wrap {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__text {
+      text-align: left;
+    }
+  }
+}
