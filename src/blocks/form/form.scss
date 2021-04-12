@@ -74,6 +74,10 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
     bottom: -35px;
     right: 0;
     margin: auto;
+    transition: opacity .2s ease;
+      &:hover {
+        opacity: .8;
+      }
   }
 
 
@@ -81,6 +85,10 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
 
   &__container-button-wrap {
     margin-right: 10px;
+    transition: opacity .2s ease;
+      &:hover {
+        opacity: .8;
+      }
   }
 
   &__radio-button {
@@ -103,7 +111,6 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
     border: 2px solid #70908B;
     box-sizing: border-box;
     border-radius: 61px;
-    // min-height: 49px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,6 +126,11 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
   // }
   
   &__radio-wrap {
+
+  transition: opacity .2s ease;
+    &:hover {
+      opacity: .8;
+    }
 
     margin-bottom: 12px;
     &:last-of-type {
@@ -177,6 +189,10 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
     line-height: 16px;
     border: none;
     color: #195557;
+    transition: opacity .2s ease;
+    &:hover {
+      opacity: .8;
+    }
   }
 
 }

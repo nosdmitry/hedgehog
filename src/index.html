@@ -80,19 +80,19 @@
       <ul class="central-buttons__list">
 
         <li class="central-buttons__list-item central-buttons__list-item_type_breeding">
-          <button class="central-buttons__circle central-buttons__circle_type_breeding"
-            aria-label="Разведение ёжиков"></button>
+          <div class="central-buttons__circle central-buttons__circle_type_breeding"
+            aria-label="Разведение ёжиков"></div>
           <h3 class="central-buttons__title">Разведение ёжиков</h3>
           <p class="central-buttons__article">Собственная ферма, уход и содержание</p>
         </li>
         <li class="central-buttons__list-item central-buttons__list-item_type_health">
-          <button class="central-buttons__circle central-buttons__circle_type_health" aria-label="Здоровье"></button>
+          <div class="central-buttons__circle central-buttons__circle_type_health" aria-label="Здоровье"></div>
           <h3 class="central-buttons__title">здоровье</h3>
           <p class="central-buttons__article">Всегда прививаем и вовремя обследуем ваших будущих питомцев</p>
         </li>
         <li class="central-buttons__list-item central-buttons__list-item_type_love">
-          <button class="central-buttons__circle central-buttons__circle_type_love"
-            aria-label="любовь и забота"></button>
+          <div class="central-buttons__circle central-buttons__circle_type_love"
+            aria-label="любовь и забота"></div>
           <h3 class="central-buttons__title">любовь и забота</h3>
           <p class="central-buttons__article">Каждому ежику мы дарим много внимания</p>
         </li>
@@ -104,8 +104,6 @@
     </section>
 
     <section class="cards">
-
-      <!-- <button href="#" class="cards__arrow cards__arrow_type_left slick-prev" aria-label="Влево"></button> -->
 
       <ul class="cards__list">
 
@@ -157,6 +155,30 @@
           </li>
         </div>
 
+        <div class="cards__list-item-wrap">
+          <li class="cards__list-item cards__list-item_color_pink">
+            <article class="cards__article">
+              <div class="cards__text-wrap">
+                <h2 class="cards__title">Ежик “Евгений”</h2>
+                <p class="cards__description">
+                  Очень любит сладости. Маленький сладкоежка=)
+                  Мы называем его так между собой.
+                  Ручной, любит внимаение
+                </p>
+              </div>
+  
+              <div class="cards__price-wrap">
+                <p class="cards__old-price">3 000р</p>
+                <p class="cards__actual-price">1 500р</p>
+              </div>
+  
+            </article>
+            <img src="<%=require('./images/hedgehog3.svg')%>" alt="Ёжик" class="cards__image">
+            <p class="cards__discount">50%</p>
+            <button class="cards__attention"></button>
+            <button class="cards__add"></button>
+          </li>
+        </div>
 
         <div class="cards__list-item-wrap">
           <li class="cards__list-item cards__list-item_color_grey">

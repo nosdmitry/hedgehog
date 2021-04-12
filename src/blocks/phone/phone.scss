@@ -24,6 +24,10 @@
     border: none;
     background: linear-gradient(1.36deg, #B0D3CE 12.29%, #FFEDCE 83.89%);
     box-shadow: -4px -4px 20px #FFFFFF, 4px 4px 20px #CFD7D3;
+    transition: opacity .2s ease;
+    &:hover {
+      opacity: .6;
+    }
     
     &::before {
       content: '';
@@ -48,6 +52,10 @@
     text-decoration: none;
     font-weight: 500;
     color: #195557;
+    transition: opacity .2s ease;
+    &:hover {
+      opacity: .6;
+    }
   }
 }
 

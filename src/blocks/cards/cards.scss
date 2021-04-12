@@ -141,6 +141,10 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
     width: 37px;
     height: 37px;
     border: none;
+    transition: opacity .2s ease;
+    &:hover {
+      opacity: .6;
+    }
   }
 
   &__add {
@@ -156,6 +160,10 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
     background-repeat: no-repeat;
     background-position-x: 80%;
     background-position-y: 90%;
+    transition: opacity .2s ease;
+    &:hover {
+      opacity: .6;
+    }
   }
 
   &__arrow {
@@ -219,30 +227,10 @@ $cormorant: 'Cormorant Infant', 'Times New Roman', Times, serif;
   }
 }
 
-// @media (max-width: 320px) {
-//   .cards {
-//     &__list-item {
-//       padding:
-//       &-wrap {
-//         max-width: 243px;
-//         margin-right: 10px;
-//         border: 1px solid red;
-//       }
-//     }
-//   }
-// }
 
 .cards__arrow {
   width: 24px;
   height: 24px;
   
 
-  // &_type_left {
-  //   left: -50px;
-  //   background-image: url(../../images/arrow-left.svg);
-  // }
-  // &_type_right {
-  //   right: -50px;
-  //   background-image: url(../../images/arrow-right.svg);
-  // }
 }

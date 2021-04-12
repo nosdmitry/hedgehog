@@ -9,6 +9,10 @@
   background-image: url(../../images/basket.svg);
   background-position: center;
   background-repeat: no-repeat;
+  transition: opacity .2s ease;
+  &:hover {
+    opacity: .6;
+  }
 
   &__number {
     position: absolute;

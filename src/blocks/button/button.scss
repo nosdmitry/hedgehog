@@ -6,6 +6,10 @@
   border: none;
   box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
   font-family: 'Realway', 'Times New Roman', Times, serif;
+  transition: opacity .2s ease;
+  &:hover {
+    opacity: .6;
+  }
 
   &_place_header {
     margin: 0 auto;
